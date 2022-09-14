@@ -14,22 +14,22 @@ java | JavaFx | MySql | CSS
 ## Screenshots
 
 ### 1
-![](src/assert/Readme/1.png)
+![](src/assert/readme/1.png)
 ### 2
-![](src/assert/Readme/2.png)
+![](src/assert/readme/2.png)
 ### 3
-![](src/assert/Readme/3.png)
+![](src/assert/readme/3.png)
 ### 4
-![](src/assert/Readme/4.png)
+![](src/assert/readme/4.png)
 ### 5
-![](src/assert/Readme/5.png)
+![](src/assert/readme/5.png)
 ### 6
-![](src/assert/Readme/6.png)
+![](src/assert/readme/6.png)
 ### 7
-![](src/assert/Readme/7.png)
+![](src/assert/readme/7.png)
 ### 8
-![](src/assert/Readme/8.png)
+![](src/assert/readme/8.png)
 ### 9
-![](src/assert/Readme/9.png)
+![](src/assert/readme/9.png)
 
 
