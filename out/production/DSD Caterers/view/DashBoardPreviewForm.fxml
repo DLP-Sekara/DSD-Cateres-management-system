@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1194.0" style="-fx-background-color: #f1f2f6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardPreviewFormController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="55.0" onMouseClicked="#openTotalOrders" prefHeight="117.0" prefWidth="251.0" style="-fx-background-radius: 8;" styleClass="lblBackgroundColor1" stylesheets="@../style.css" AnchorPane.rightAnchor="929.0" AnchorPane.topAnchor="55.0">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="61.0" layoutX="169.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/cart-74-128.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="32.0" layoutY="74.0" text="Total Orders" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblOrderPrecentage" layoutX="32.0" layoutY="24.0" text="0%" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="309.0" layoutY="55.0" onMouseClicked="#openStore" prefHeight="117.0" prefWidth="251.0" style="-fx-background-radius: 8;" styleClass="lblBackgroundColor2" stylesheets="@../style.css" AnchorPane.rightAnchor="634.0" AnchorPane.topAnchor="55.0">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="61.0" layoutX="169.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/bunch-ingredients-128.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="37.0" layoutY="75.0" text="Storage Content" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblStoresPrecentage" layoutX="40.0" layoutY="24.0" text="0%" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="904.0" layoutY="55.0" onMouseClicked="#openAllCustomers" prefHeight="117.0" prefWidth="251.0" style="-fx-background-radius: 8;" styleClass="lblBackgroundColor4" stylesheets="@../style.css" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="55.0">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="61.0" layoutX="173.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/conference-128.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="37.0" layoutY="78.0" text="Total Customers" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCustomerPrecentage" layoutX="35.0" layoutY="25.0" text="0%" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="607.0" layoutY="55.0" onMouseClicked="#openPayments" prefHeight="117.0" prefWidth="251.0" style="-fx-background-radius: 8;" styleClass="lblBackgroundColor3" stylesheets="@../style.css" AnchorPane.rightAnchor="336.0" AnchorPane.topAnchor="55.0">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="61.0" layoutX="169.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/cash-receiving-128.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="36.0" layoutY="74.0" text="Total Revenue" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRevenuePrecentage" layoutX="36.0" layoutY="28.0" text="0%" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="63.0" layoutY="14.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #2c3e50;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="42.0" layoutY="7.0" text="DashBoard" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="5.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/menu-4-24.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="lblDate" layoutX="1129.0" layoutY="18.0" text="Label" textFill="#f8f5f5" AnchorPane.leftAnchor="1129.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="1129.0" layoutY="1.0" text="Label" textFill="#f8f5f5" AnchorPane.leftAnchor="1129.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="dashBoardPreviewPagePane" layoutX="15.0" layoutY="234.0" prefHeight="480.0" prefWidth="1140.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="205.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></AnchorPane>
+   </children>
+</AnchorPane>

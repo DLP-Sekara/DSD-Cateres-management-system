@@ -1,0 +1,80 @@
+.backgroundColor{
+    -fx-background-color: linear-gradient(#D7E1EC,#D7E1EC,#D7E1EC);
+}
+
+.btnBackgroundColor{
+    -fx-background-color: linear-gradient(#2c3e50,#2980b9,#2c3e50);
+}
+.sidebarItem:hover{
+    -fx-background-color: Black;
+    -fx-border-color: #f5f6fa;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+.sidebarItem{
+    -fx-background-color: #2c3e50;
+}
+/*===========================dashBoardPreview=========================================*/
+.lblBackgroundColor1{
+    -fx-background-color: linear-gradient(to left,#3867d6,#0fbcf9);
+}
+.lblBackgroundColor2{
+    -fx-background-color: linear-gradient(to left,#eb3b5a,#FDA7DF);
+}
+.lblBackgroundColor3{
+    -fx-background-color: linear-gradient(to left,#20bf6b,#7bed9f);
+}
+.lblBackgroundColor4{
+    -fx-background-color: linear-gradient(to left,#fa8231,#f9ca24);
+}
+.lblBackgroundColor5{
+    -fx-background-color: linear-gradient(to left,#22a6b3,#786fa6);
+}
+/*================================CustomerForm====================================*/
+.backgroundColorCust1{
+    -fx-background-color: linear-gradient(#f5f6fa,#dff9fb);
+}
+.textPane{
+    -fx-border-color: #81ecec;
+    -fx-border-radius: 8px;
+}
+.textPane2{
+    -fx-border-color: #576574;
+    -fx-border-radius: 8px;
+    -fx-background-color: linear-gradient(#2c3e50,#2980b9,#2c3e50);
+}
+.textField{
+    -fx-border-color: #81ecec;
+    -fx-border-radius: 8px;
+    -fx-background-color: white;
+    -fx-prompt-text-fill: #726d6d;
+}
+.textField2{
+    -fx-border-color: #60a3bc;
+    -fx-border-radius: 40px;
+    -fx-background-color: #60a3bc;
+    -fx-prompt-text-fill: #726d6d;
+}
+.btnField{
+    /*-fx-border-color: #27ae60;*/
+    -fx-border-radius: 8px;
+    -fx-background-color:#3ae374;
+}
+.btnField2{
+    -fx-border-radius: 10px;
+    -fx-background-color: linear-gradient(to left,#be2edd,#4834d4);
+}
+
+.tblField{
+    -fx-border-color: #c7ecee;
+    -fx-border-radius: 8px;
+    -fx-background-color: #f1f2f6;
+    -fx-font-size:15px;
+}
+
+.table-row-cell:selected {
+    /*-fx-font-weight: bold; !** Does work. *!
+    -fx-font-color: bold; !** Does work. *!
+    -fx-text-fill: red; !** Does NOT work. *!*/
+    -fx-text-background-color: Blue ;
+    -fx-font-weight: bold;
+}

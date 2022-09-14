@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="596.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TransportSettingFormController">
+   <children>
+      <AnchorPane layoutX="24.0" layoutY="154.0" prefHeight="157.0" prefWidth="503.0" stylesheets="@../style.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <styleClass>
+            <String fx:value="backgroundColorCust1" />
+            <String fx:value="textPane" />
+         </styleClass>
+         <children>
+            <Button fx:id="saveButton" layoutX="543.0" layoutY="519.0" mnemonicParsing="false" onAction="#saveTransportOnAction" prefHeight="29.0" prefWidth="67.0" style="-fx-background-radius: 8; -fx-background-color: #32ff7e;" text="Save" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="543.0" AnchorPane.rightAnchor="106.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TableView fx:id="tblTransport" layoutX="15.0" layoutY="35.0" prefHeight="211.0" prefWidth="669.0" style="-fx-background-radius: 8;" styleClass="tblField" stylesheets="@../style.css" AnchorPane.bottomAnchor="318.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="35.0">
+               <columns>
+                  <TableColumn fx:id="colTransportNo" prefWidth="133.0" style="-fx-background-color: #dff9fb;" text="Transport No" />
+                  <TableColumn fx:id="colTransportType" prefWidth="188.0" style="-fx-background-color: #dff9fb;" text="Transport Type" />
+                  <TableColumn fx:id="colTransportCost" prefWidth="130.0" style="-fx-background-color: #dff9fb;" text="Transport cost" />
+                  <TableColumn fx:id="colTransportTime" prefWidth="128.0" style="-fx-background-color: #dff9fb;" text="Time" />
+                  <TableColumn fx:id="colDeriverId" prefWidth="89.0" style="-fx-background-color: #dff9fb;" text="Driver Id" />
+               </columns>
+            </TableView>
+            <Label layoutX="105.0" layoutY="304.0" text="Transport Type :" textAlignment="CENTER" AnchorPane.rightAnchor="559.0" />
+            <TextField fx:id="txtTransportType" layoutX="219.0" layoutY="299.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="370.0" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="99.0" />
+            <Label layoutX="94.0" layoutY="344.0" text="Transport Cost :" AnchorPane.rightAnchor="559.0" />
+            <TextField fx:id="txtTransportCost" layoutX="219.0" layoutY="339.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="370.0" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="99.0" />
+            <Label layoutX="96.0" layoutY="384.0" text="Time :" AnchorPane.rightAnchor="559.0" />
+            <Label layoutX="105.0" layoutY="424.0" text="Driver ID :" AnchorPane.rightAnchor="559.0" />
+            <Button layoutX="378.0" layoutY="524.0" mnemonicParsing="false" onAction="#deleteTransportOnAction" prefHeight="29.0" prefWidth="67.0" style="-fx-background-radius: 8; -fx-background-color: #e66767;" styleClass="btnField" stylesheets="@../style.css" text="Delete" textFill="WHITE" AnchorPane.bottomAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="updateButton" layoutX="457.0" layoutY="524.0" mnemonicParsing="false" onAction="#updateTransportOnAction" prefHeight="29.0" prefWidth="67.0" style="-fx-background-radius: 8; -fx-background-color: #3dc1d3;" styleClass="btnField" stylesheets="@../style.css" text="Update" textFill="WHITE" AnchorPane.bottomAnchor="15.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="cmbTransportTime" layoutX="220.0" layoutY="379.0" prefHeight="27.0" prefWidth="382.0" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="99.0" />
+            <ComboBox fx:id="cmbTransportDriverID" layoutX="220.0" layoutY="419.0" prefHeight="27.0" prefWidth="382.0" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="99.0" />
+            <Label fx:id="lblDate" layoutX="619.0" layoutY="14.0" />
+            <Label fx:id="transportNo" layoutX="220.0" layoutY="267.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="30.0" layoutY="20.0" text="Transport Info" textFill="#6e6f6d" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1194.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingFormController">
+   <children>
+      <AnchorPane layoutX="50.0" layoutY="50.0" onMouseClicked="#openSetting1" prefHeight="117.0" prefWidth="251.0" style="-fx-background-radius: 8;" styleClass="lblBackgroundColor1" stylesheets="@../style.css" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="189.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/account-login-64.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="45.0" text="Account Settings" textFill="#fffdfd" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="50.0" layoutY="308.0" onMouseClicked="#openSetting3" prefHeight="117.0" prefWidth="251.0" style="-fx-background-radius: 8;" styleClass="lblBackgroundColor3" stylesheets="@../style.css" AnchorPane.leftAnchor="50.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="189.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/24-hour-service-64.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="45.0" text="Supplier Management" textFill="#fffdfd" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="50.0" layoutY="437.0" onMouseClicked="#openSetting4" prefHeight="117.0" prefWidth="251.0" style="-fx-background-radius: 8;" styleClass="lblBackgroundColor4" stylesheets="@../style.css" AnchorPane.leftAnchor="50.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="189.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="30.0">
+               <image>
+                  <Image url="@../assert/group-64.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="45.0" text="Driver Management" textFill="#fffdfd" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="50.0" layoutY="178.0" onMouseClicked="#openSetting2" prefHeight="117.0" prefWidth="251.0" style="-fx-background-radius: 8;" styleClass="lblBackgroundColor2" stylesheets="@../style.css" AnchorPane.leftAnchor="50.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="189.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="30.0">
+               <image>
+                  <Image url="@../assert/worker-64.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="45.0" text="Employee Settings" textFill="#fffdfd" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane fx:id="settingFormBackGround" layoutX="397.0" layoutY="72.0" prefHeight="596.0" prefWidth="730.0" style="-fx-background-radius: 8;" />
+      <AnchorPane layoutX="83.0" layoutY="34.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #2c3e50;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="42.0" layoutY="7.0" text="Settings" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="5.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/menu-4-24.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="50.0" layoutY="567.0" onMouseClicked="#openSetting5" prefHeight="117.0" prefWidth="251.0" style="-fx-background-radius: 8;" styleClass="lblBackgroundColor5" stylesheets="@../style.css" AnchorPane.leftAnchor="50.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="189.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="30.0">
+               <image>
+                  <Image url="@../assert/truck-64.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="45.0" text="Transport Info" textFill="#fffdfd" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <Label fx:id="lblDate" layoutX="1129.0" layoutY="18.0" text="lable" textFill="#fffefe" AnchorPane.leftAnchor="1129.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1129.0" layoutY="1.0" text="Label" textFill="#f8f5f5" AnchorPane.leftAnchor="1129.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1194.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MealsFormController">
+   <children>
+      <AnchorPane layoutX="83.0" layoutY="34.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #2c3e50;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="42.0" layoutY="7.0" text="Meals" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="5.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/menu-4-24.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="515.0" layoutY="50.0" prefHeight="157.0" prefWidth="503.0" stylesheets="@../style.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="515.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="50.0">
+         <styleClass>
+            <String fx:value="backgroundColorCust1" />
+            <String fx:value="textPane" />
+         </styleClass>
+         <children>
+            <TableView fx:id="tblMeal" layoutX="17.0" layoutY="39.0" prefHeight="279.0" prefWidth="544.0" style="-fx-background-radius: 8;" styleClass="tblField" stylesheets="@../style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="38.0">
+               <columns>
+                  <TableColumn fx:id="colMealNo" prefWidth="82.99996948242188" style="-fx-background-color: #dff9fb;" text="Meal No" />
+                  <TableColumn fx:id="colMealName" prefWidth="199.0" style="-fx-background-color: #dff9fb;" text="Meal Name" />
+                  <TableColumn fx:id="colMealType" prefWidth="196.0" style="-fx-background-color: #dff9fb;" text="Meal Type" />
+                  <TableColumn fx:id="colMealPrice" prefWidth="176.0" style="-fx-background-color: #dff9fb;" text="Price" />
+               </columns>
+            </TableView>
+            <Label layoutX="16.0" layoutY="9.0" text="All Meals" textFill="#6e6f6d">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="594.0" layoutY="184.0" onKeyReleased="#textFields_Key_Released" prefHeight="157.0" prefWidth="503.0" stylesheets="@../style.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="700.0" AnchorPane.topAnchor="50.0">
+         <styleClass>
+            <String fx:value="backgroundColorCust1" />
+            <String fx:value="textPane" />
+         </styleClass>
+         <children>
+            <Label layoutX="22.0" layoutY="12.0" text="Add Meal" textFill="#6e6f6d" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="addButton" layoutX="377.0" layoutY="493.0" mnemonicParsing="false" onAction="#addMealOnAction" prefHeight="29.0" prefWidth="73.0" style="-fx-background-radius: 8;" styleClass="btnField" stylesheets="@../style.css" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="217.0" layoutY="493.0" mnemonicParsing="false" onAction="#deleteMealOnAction" prefHeight="29.0" prefWidth="73.0" style="-fx-background-radius: 8; -fx-background-color: #ff5e57;" styleClass="btnField" stylesheets="@../style.css" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="updateButton" layoutX="298.0" layoutY="493.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="29.0" prefWidth="73.0" style="-fx-background-radius: 8; -fx-background-color: #0fbcf9;" styleClass="btnField" stylesheets="@../style.css" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtMealNo" layoutX="20.0" layoutY="165.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="370.0" promptText="00" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="710.0" />
+      <Label layoutX="20.0" layoutY="137.0" text="Meal No" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMealName" layoutX="20.0" layoutY="255.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="370.0" promptText="rice" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="710.0" />
+      <Label layoutX="20.0" layoutY="227.0" text="Meal Name" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="317.0" text="Meal Type" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="407.0" text="Price" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMealprice" layoutX="20.0" layoutY="435.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="370.0" promptText="00.00" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="710.0" />
+      <ComboBox fx:id="cmbMealType" layoutX="20.0" layoutY="346.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="370.0" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="710.0" />
+      <Label fx:id="lblDate" layoutX="1136.0" layoutY="18.0" text="lable" textFill="#fffefe" AnchorPane.leftAnchor="1129.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1149.0" layoutY="1.0" text="Label" textFill="#f8f5f5" AnchorPane.leftAnchor="1129.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomersFormController">
+   <children>
+      <AnchorPane layoutX="83.0" layoutY="34.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #2c3e50;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="42.0" layoutY="7.0" text="Customers" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="5.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/menu-4-24.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="24.0" layoutY="85.0" prefHeight="370.0" prefWidth="317.0" stylesheets="@../style.css" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="55.0">
+         <styleClass>
+            <String fx:value="backgroundColorCust1" />
+            <String fx:value="textPane" />
+         </styleClass>
+         <children>
+            <TextField fx:id="txtCustomerName" layoutX="26.0" layoutY="36.0" onKeyReleased="#textFields_Key_Released" prefHeight="27.0" prefWidth="263.0" promptText="saman" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+            <Label layoutX="17.0" layoutY="7.0" text="Name" AnchorPane.leftAnchor="17.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCustomerAddress" layoutX="19.0" layoutY="95.0" onKeyReleased="#textFields_Key_Released" prefHeight="27.0" prefWidth="263.0" promptText="colombo" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+            <Label layoutX="17.0" layoutY="67.0" text="Address" AnchorPane.leftAnchor="17.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCustomerContact" layoutX="19.0" layoutY="155.0" onKeyReleased="#textFields_Key_Released" prefHeight="27.0" prefWidth="263.0" promptText="01111111" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+            <Label layoutX="17.0" layoutY="127.0" text="Contact" AnchorPane.leftAnchor="17.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="customerAddBtn" layoutX="161.0" layoutY="319.0" mnemonicParsing="false" onAction="#addCustomerOnAction" prefHeight="29.0" prefWidth="138.0" style="-fx-background-radius: 8;" styleClass="btnField" stylesheets="@../style.css" text="Add" textFill="WHITE" AnchorPane.leftAnchor="160.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="18.0" layoutY="318.0" mnemonicParsing="false" onAction="#cancelAddCustomer" prefHeight="29.0" prefWidth="138.0" style="-fx-background-radius: 8; -fx-background-color: #e66767;" styleClass="btnField" stylesheets="@../style.css" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ComboBox fx:id="cmbCustomerCompany" layoutX="35.0" layoutY="280.0" onKeyReleased="#cmbKeyReleased" prefHeight="27.0" prefWidth="263.0" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+            <ComboBox fx:id="cmbCustomerGender" layoutX="37.0" layoutY="219.0" onKeyReleased="#cmbKeyReleased" prefHeight="27.0" prefWidth="263.0" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+            <Label layoutX="22.0" layoutY="189.0" text="Gender">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="249.0" text="Company Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSid" layoutX="180.0" layoutY="9.0" />
+            <Label fx:id="lblOrderId" layoutX="258.0" layoutY="18.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="332.0" layoutY="55.0" prefHeight="278.0" prefWidth="822.0" stylesheets="@../style.css" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="345.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="55.0">
+         <children>
+            <TableView fx:id="tblCustomers" layoutX="21.0" layoutY="19.0" prefHeight="604.0" prefWidth="804.0" style="-fx-background-radius: 8;" stylesheets="@../style.css">
+               <columns>
+                  <TableColumn fx:id="colCustomerId" prefWidth="98.0" style="-fx-background-color: #dff9fb;" text="Customer ID" />
+                  <TableColumn fx:id="colCustomerName" prefWidth="206.0" style="-fx-background-color: #dff9fb;" text="Name" />
+                  <TableColumn fx:id="colCustomerAddress" prefWidth="151.0" style="-fx-background-color: #dff9fb;" text="Address" />
+                  <TableColumn fx:id="colCustomerContact" prefWidth="126.0" style="-fx-background-color: #dff9fb;" text="Contact" />
+                  <TableColumn fx:id="colCustomerGender" prefWidth="96.0" style="-fx-background-color: #dff9fb;" text="Gender" />
+                  <TableColumn fx:id="colCustomerCompanyname" maxWidth="5030.0" prefWidth="127.0" style="-fx-background-color: #dff9fb;" text="Company name" />
+               </columns>
+               <styleClass>
+                  <String fx:value="tblField" />
+                  <String fx:value="table-row-cell" />
+               </styleClass>
+            </TableView>
+         </children>
+         <styleClass>
+            <String fx:value="backgroundColorCust1" />
+            <String fx:value="textPane" />
+         </styleClass>
+      </AnchorPane>
+      <AnchorPane layoutX="15.0" layoutY="444.0" prefHeight="260.0" prefWidth="317.0" stylesheets="@../style.css" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="15.0">
+         <styleClass>
+            <String fx:value="backgroundColorCust1" />
+            <String fx:value="textPane" />
+         </styleClass>
+         <children>
+            <TextField fx:id="setCustomerName" layoutX="15.0" layoutY="44.0" prefHeight="27.0" prefWidth="313.0" promptText="Name" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="23.0" />
+            <TextField fx:id="setCustomerAddress" layoutX="14.0" layoutY="84.0" prefHeight="27.0" prefWidth="313.0" promptText="Address" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="22.0" />
+            <TextField fx:id="setCustomerContact" layoutX="16.0" layoutY="125.0" prefHeight="27.0" prefWidth="313.0" promptText="Contact" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" />
+            <TextField fx:id="setCustomerCompany" layoutX="19.0" layoutY="165.0" prefHeight="27.0" prefWidth="313.0" promptText="Company Name" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+            <Button layoutX="163.0" layoutY="205.0" mnemonicParsing="false" onAction="#updateCustomerOnAction" prefHeight="29.0" prefWidth="138.0" style="-fx-background-radius: 8; -fx-background-color: #3dc1d3;" styleClass="btnField" stylesheets="@../style.css" text="Update" textFill="WHITE" AnchorPane.leftAnchor="162.0" AnchorPane.rightAnchor="17.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="18.0" layoutY="205.0" mnemonicParsing="false" onAction="#deleteCustomerOnAction" prefHeight="29.0" prefWidth="138.0" style="-fx-background-radius: 8; -fx-background-color: #e66767;" styleClass="btnField" stylesheets="@../style.css" text="Delete" textFill="WHITE" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="162.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="lblTempCustomerId" layoutX="18.0" layoutY="14.0" prefHeight="17.0" prefWidth="46.0" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblDate" layoutX="1139.0" layoutY="18.0" text="Label" textFill="#f8f5f5" AnchorPane.leftAnchor="1129.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1139.0" layoutY="1.0" text="Label" textFill="#f8f5f5" AnchorPane.leftAnchor="1129.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

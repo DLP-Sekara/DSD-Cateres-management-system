@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="480.0" prefWidth="1140.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AllCustomersFormController">
+   <children>
+      <TableView fx:id="tblNinjaMale" layoutX="26.0" layoutY="16.0" prefHeight="446.0" prefWidth="255.0" style="-fx-background-radius: 8;" styleClass="tblField" stylesheets="@../style.css" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="25.0">
+         <columns>
+            <TableColumn fx:id="colNinjaMaleId" prefWidth="72.99996948242188" style="-fx-background-color: #dff9fb;" text=" ID" />
+            <TableColumn fx:id="colNinjaMaleName" prefWidth="178.0" style="-fx-background-color: #dff9fb;" text="Name" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tblNinjaFemale" layoutX="300.0" layoutY="25.0" prefHeight="446.0" prefWidth="255.0" style="-fx-background-radius: 8;" styleClass="tblField" stylesheets="@../style.css" AnchorPane.bottomAnchor="25.0" AnchorPane.topAnchor="25.0">
+         <columns>
+            <TableColumn fx:id="colNinjaFemaleId" prefWidth="72.99996948242188" style="-fx-background-color: #dff9fb;" text=" ID" />
+            <TableColumn fx:id="colNinjaFemaleName" prefWidth="178.0" style="-fx-background-color: #dff9fb;" text="Name" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tblDentaMale" layoutX="586.0" layoutY="33.0" prefHeight="446.0" prefWidth="255.0" style="-fx-background-radius: 8;" styleClass="tblField" stylesheets="@../style.css" AnchorPane.bottomAnchor="25.0" AnchorPane.topAnchor="25.0">
+         <columns>
+            <TableColumn fx:id="colDentaMaleId" prefWidth="72.99996948242188" style="-fx-background-color: #dff9fb;" text=" ID" />
+            <TableColumn fx:id="colDentaMaleName" prefWidth="178.0" style="-fx-background-color: #dff9fb;" text="Name" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tblDentaFemale" layoutX="857.0" layoutY="17.0" prefHeight="446.0" prefWidth="255.0" style="-fx-background-radius: 8;" styleClass="tblField" stylesheets="@../style.css" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="25.0">
+         <columns>
+            <TableColumn fx:id="colDentaFemaleId" prefWidth="72.99996948242188" style="-fx-background-color: #dff9fb;" text=" ID" />
+            <TableColumn fx:id="colDentaFemaleName" prefWidth="178.0" style="-fx-background-color: #dff9fb;" text="Name" />
+         </columns>
+      </TableView>
+      <Label layoutX="86.0" layoutY="4.0" text="Ninja Male Customers" textFill="#7c7c7c" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="356.0" layoutY="4.0" text="Ninja Female Customers" textFill="#7c7c7c" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="652.0" layoutY="4.0" text="Denta Male Customers" textFill="#7c7c7c" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="926.0" layoutY="4.0" text="Denta Female Customers" textFill="#7c7c7c" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="692.0" layoutY="446.0" text="Total :" AnchorPane.bottomAnchor="4.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="975.0" layoutY="453.0" text="Total :" AnchorPane.bottomAnchor="4.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="413.0" layoutY="446.0" text="Total :" AnchorPane.bottomAnchor="4.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="453.0" text="Total :" AnchorPane.bottomAnchor="4.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNinjaMaleCustomerCount" layoutX="165.0" layoutY="459.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNinjaFemaleCustomerCount" layoutX="453.0" layoutY="459.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDentaMaleCustomerCount" layoutX="732.0" layoutY="459.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDentaFemaleCustomerCount" layoutX="1015.0" layoutY="459.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+   <styleClass>
+      <String fx:value="backgroundColorCust1" />
+      <String fx:value="textPane" />
+   </styleClass>
+</AnchorPane>

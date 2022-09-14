@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="596.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplierSettingFormController">
+   <children>
+      <AnchorPane layoutX="34.0" layoutY="164.0" prefHeight="157.0" prefWidth="503.0" stylesheets="@../style.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <styleClass>
+            <String fx:value="backgroundColorCust1" />
+            <String fx:value="textPane" />
+         </styleClass>
+         <children>
+            <TableView fx:id="tblSupplier" layoutX="14.0" layoutY="44.0" prefHeight="211.0" prefWidth="669.0" style="-fx-background-radius: 8;" styleClass="tblField" stylesheets="@../style.css" AnchorPane.bottomAnchor="307.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="44.0">
+               <columns>
+                  <TableColumn fx:id="colSupplierShopName" prefWidth="196.0" style="-fx-background-color: #dff9fb;" text="Shop Name" />
+                  <TableColumn fx:id="colSupplierAddress" prefWidth="166.0" style="-fx-background-color: #dff9fb;" text="Address" />
+                  <TableColumn fx:id="colSupplierContact" prefWidth="169.0" style="-fx-background-color: #dff9fb;" text="Contact" />
+                  <TableColumn fx:id="ColSupplierPayment" prefWidth="135.0" style="-fx-background-color: #dff9fb;" text="Payment" />
+               </columns>
+            </TableView>
+            <Label layoutX="76.0" layoutY="304.0" text="Shop Name :" textAlignment="CENTER" AnchorPane.rightAnchor="557.0" />
+            <TextField fx:id="supplierShopName" layoutX="217.0" layoutY="299.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="370.0" promptText="Shop Name" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="217.0" AnchorPane.rightAnchor="97.0" />
+            <Label layoutX="96.0" layoutY="344.0" text="Address :" AnchorPane.rightAnchor="557.0" />
+            <TextField fx:id="supplierAddress" layoutX="217.0" layoutY="339.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="370.0" promptText="Address" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="217.0" AnchorPane.rightAnchor="97.0" />
+            <Label layoutX="98.0" layoutY="384.0" text="Contact :" AnchorPane.rightAnchor="557.0" />
+            <TextField fx:id="supplierContact" layoutX="217.0" layoutY="379.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="370.0" promptText="Contact" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="217.0" AnchorPane.rightAnchor="97.0" />
+            <Label layoutX="93.0" layoutY="424.0" text="Payment :" AnchorPane.rightAnchor="557.0" />
+            <TextField fx:id="supplierPayment" layoutX="217.0" layoutY="419.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="370.0" promptText="Payment" style="-fx-background-radius: 8;" styleClass="textField" stylesheets="@../style.css" AnchorPane.leftAnchor="217.0" AnchorPane.rightAnchor="97.0" />
+            <Label fx:id="lblShopNo" layoutX="218.0" layoutY="276.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="30.0" layoutY="30.0" text="Supplier Management" textFill="#6e6f6d" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveSupplierButton" layoutX="547.0" layoutY="475.0" mnemonicParsing="false" onAction="#saveSupplierOnAction" prefHeight="29.0" prefWidth="67.0" style="-fx-background-radius: 8; -fx-background-color: #32ff7e;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="388.0" layoutY="474.0" mnemonicParsing="false" onAction="#supplierDeleteOnAction" prefHeight="29.0" prefWidth="67.0" style="-fx-background-radius: 8; -fx-background-color: #e66767;" styleClass="btnField" stylesheets="@../style.css" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateButton" layoutX="467.0" layoutY="474.0" mnemonicParsing="false" onAction="#supplierUpdateOnAction" prefHeight="29.0" prefWidth="67.0" style="-fx-background-radius: 8; -fx-background-color: #3dc1d3;" styleClass="btnField" stylesheets="@../style.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

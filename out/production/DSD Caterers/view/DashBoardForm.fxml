@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackone" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <BorderPane fx:id="boardOne" prefHeight="515.0" prefWidth="709.0">
+         <left>
+            <VBox fx:id="vBoxone" style="-fx-background-color: #2c3e50;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="50.0" prefWidth="157.0" style="-fx-background-color: #2c3e50;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@../assert/logo%209.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="73.0" layoutY="15.0" text="D S D" textFill="#fc9c15" wrapText="true">
+                           <font>
+                              <Font name="Algerian" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="69.0" layoutY="39.0" text="CATERERS" textFill="#f5f5f4" wrapText="true">
+                           <font>
+                              <Font name="Impact" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#openDashBoard" prefHeight="38.0" prefWidth="158.0" stylesheets="@../style.css" text="DashBoard" textAlignment="RIGHT" textFill="#fcf7f7" wrapText="true">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assert/dashboard-2-24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="sidebarItem" />
+                        <String fx:value="button" />
+                     </styleClass></Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#openCustomerPage" prefHeight="38.0" prefWidth="158.0" styleClass="sidebarItem" stylesheets="@../style.css" text="Customers" textAlignment="RIGHT" textFill="#fcf7f7" wrapText="true">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assert/group-24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#openOrdersPage" prefHeight="38.0" prefWidth="158.0" styleClass="sidebarItem" stylesheets="@../style.css" text="Orders" textAlignment="RIGHT" textFill="#fcf7f7" wrapText="true">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assert/purchase-order-24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#openMealsPage" prefHeight="38.0" prefWidth="158.0" styleClass="sidebarItem" stylesheets="@../style.css" text="Meals" textAlignment="RIGHT" textFill="#fcf7f7" wrapText="true">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assert/hamburger-24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#openStoresPage" prefHeight="38.0" prefWidth="158.0" styleClass="sidebarItem" stylesheets="@../style.css" text="Stores" textAlignment="RIGHT" textFill="#fcf7f7" wrapText="true">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assert/organization-24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#openBillsFormPage" prefHeight="38.0" prefWidth="158.0" styleClass="sidebarItem" stylesheets="@../style.css" text="Payments" textAlignment="RIGHT" textFill="#fcf7f7" wrapText="true">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assert/money-bag-24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#openSettingsPage" prefHeight="38.0" prefWidth="158.0" styleClass="sidebarItem" stylesheets="@../style.css" text="Settings" textAlignment="RIGHT" textFill="#fcf7f7" wrapText="true">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assert/settings-5-24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#ExitButtonOnAction" prefHeight="38.0" prefWidth="158.0" styleClass="sidebarItem" stylesheets="@../style.css" text="Log out" textAlignment="RIGHT" textFill="#fcf7f7" wrapText="true">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assert/account-logout-24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label text="v 1.0.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="80.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <StackPane fx:id="panalRoot" prefHeight="568.0" prefWidth="552.0" style="-fx-background-color: #f5f6fa;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
